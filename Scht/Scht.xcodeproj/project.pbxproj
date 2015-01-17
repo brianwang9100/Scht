@@ -14,6 +14,7 @@
 		DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1B09361A6A1A740037DA95 /* Images.xcassets */; };
 		DF1B093A1A6A1A740037DA95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1B09381A6A1A740037DA95 /* LaunchScreen.xib */; };
 		DF1B09461A6A1A740037DA95 /* SchtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1B09451A6A1A740037DA95 /* SchtTests.m */; };
+		DF1B09511A6A1D350037DA95 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DF1B094F1A6A1D350037DA95 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		DF1B093F1A6A1A740037DA95 /* SchtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1B09441A6A1A740037DA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF1B09451A6A1A740037DA95 /* SchtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchtTests.m; sourceTree = "<group>"; };
+		DF1B094F1A6A1D350037DA95 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		DF1B091D1A6A1A740037DA95 = {
 			isa = PBXGroup;
 			children = (
+				DF1B094F1A6A1D350037DA95 /* README.md */,
 				DF1B09281A6A1A740037DA95 /* Scht */,
 				DF1B09421A6A1A740037DA95 /* SchtTests */,
 				DF1B09271A6A1A740037DA95 /* Products */,
@@ -222,6 +225,7 @@
 			files = (
 				DF1B09321A6A1A740037DA95 /* ViewController.m in Sources */,
 				DF1B092F1A6A1A740037DA95 /* AppDelegate.m in Sources */,
+				DF1B09511A6A1D350037DA95 /* README.md in Sources */,
 				DF1B092C1A6A1A740037DA95 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
