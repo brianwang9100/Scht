@@ -13,5 +13,7 @@
 
 @interface MapViewController : UIViewController<CLLocationManagerDelegate,GMSMapViewDelegate>
 @property (nonatomic,retain) CLLocationManager *locationManager;
-@property (nonatomic, strong) IBOutlet UIView *viewForMap;
+@property (nonatomic, strong) IBOutlet UIButton *placeShitButton;
+//@property (nonatomic, strong) IBOutlet UIView *viewForMap;
+
 @end

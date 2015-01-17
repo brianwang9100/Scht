@@ -23,7 +23,6 @@
 }
 -(void)startMap {
     //---- For getting current gps location
-    _mapView.myLocationEnabled = YES;
 
     if ([CLLocationManager locationServicesEnabled]) {
         if (_locationManager == nil) {
@@ -37,18 +36,20 @@
         }
         [_locationManager startUpdatingLocation];
     }
+    NSLog([NSString stringWithFormat:@"%d, %d", _locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude]);
     //------
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: _locationManager.location.coordinate.latitude
                                                             longitude: _locationManager.location.coordinate.longitude
                                                                  zoom:12];
-    _mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    _mapView = [GMSMapView mapWithFrame:self.view.bounds camera:camera];
     _mapView.delegate = self;
     _mapView.padding = UIEdgeInsetsMake(0, 0, 49, 0);
     _mapView.settings.compassButton = YES;
-    _mapView.settings.myLocationButton = YES;
+    _mapView.myLocationEnabled = YES;
     [_locationManager stopUpdatingLocation];
     
-    self.view = _mapView;
+    [self.view insertSubview: _mapView atIndex: 0];
+    
 }
 
 - (void)didReceiveMemoryWarning {
