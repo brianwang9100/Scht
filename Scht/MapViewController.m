@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self startMap];
+    [_placeShitButton addTarget:self action:@selector(placeShit) forControlEvents:UIControlEventTouchUpInside];
 }
 -(void)startMap {
     //---- For getting current gps location
@@ -36,7 +37,7 @@
         }
         [_locationManager startUpdatingLocation];
     }
-    NSLog([NSString stringWithFormat:@"%d, %d", _locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude]);
+    NSLog([NSString stringWithFormat:@"%f, %f", _locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude]);
     //------
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: _locationManager.location.coordinate.latitude
                                                             longitude: _locationManager.location.coordinate.longitude
@@ -49,6 +50,10 @@
     [_locationManager stopUpdatingLocation];
     
     [self.view insertSubview: _mapView atIndex: 0];
+    
+}
+
+-(void)placeShit {
     
 }
 
