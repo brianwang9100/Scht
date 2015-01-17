@@ -7,13 +7,23 @@
         <!--Map-->
         <scene sceneID="vv7-xr-WSr">
             <objects>
-                <viewController id="zrL-04-0OR" userLabel="Map" sceneMemberID="viewController">
+                <viewController id="zrL-04-0OR" userLabel="Map" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgo-39-Qa8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="4HO-1Y-1YI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="poo2.png" id="wMd-mx-H4V" userLabel="Map"/>
+                    <connections>
+                        <outlet property="viewForMap" destination="4HO-1Y-1YI" id="Yrf-fl-6Oh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1c-os-tW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

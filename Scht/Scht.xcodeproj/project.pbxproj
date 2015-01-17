@@ -32,6 +32,12 @@
 		DFB02D791A6A5CA000E7AE1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D781A6A5CA000E7AE1B /* QuartzCore.framework */; };
 		DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D7A1A6A5CA600E7AE1B /* SystemConfiguration.framework */; };
 		DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */; };
+		DFB02D821A6A60DA00E7AE1B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D811A6A60DA00E7AE1B /* MapViewController.m */; };
+		DFB02D851A6A623800E7AE1B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D841A6A623800E7AE1B /* ProfileViewController.m */; };
+		DFB02D881A6A624900E7AE1B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D871A6A624900E7AE1B /* ShopViewController.m */; };
+		DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */; };
+		DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */; };
+		DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,16 @@
 		DFB02D781A6A5CA000E7AE1B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DFB02D7A1A6A5CA600E7AE1B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		DFB02D801A6A60DA00E7AE1B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		DFB02D811A6A60DA00E7AE1B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		DFB02D831A6A623800E7AE1B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ../ProfileViewController.h; sourceTree = "<group>"; };
+		DFB02D841A6A623800E7AE1B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ../ProfileViewController.m; sourceTree = "<group>"; };
+		DFB02D861A6A624900E7AE1B /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopViewController.h; path = ../ShopViewController.h; sourceTree = "<group>"; };
+		DFB02D871A6A624900E7AE1B /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopViewController.m; path = ../ShopViewController.m; sourceTree = "<group>"; };
+		DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTableViewController.h; path = ../HistoryTableViewController.h; sourceTree = "<group>"; };
+		DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewController.m; path = ../HistoryTableViewController.m; sourceTree = "<group>"; };
+		DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */,
+				DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */,
 				DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */,
 				DFB02D791A6A5CA000E7AE1B /* QuartzCore.framework in Frameworks */,
 				DFB02D771A6A5C9C00E7AE1B /* OpenGLES.framework in Frameworks */,
@@ -111,6 +129,8 @@
 		DF1B091D1A6A1A740037DA95 = {
 			isa = PBXGroup;
 			children = (
+				DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */,
+				DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */,
 				DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */,
 				DFB02D7A1A6A5CA600E7AE1B /* SystemConfiguration.framework */,
 				DFB02D781A6A5CA000E7AE1B /* QuartzCore.framework */,
@@ -146,6 +166,14 @@
 			children = (
 				DF1B092D1A6A1A740037DA95 /* AppDelegate.h */,
 				DF1B092E1A6A1A740037DA95 /* AppDelegate.m */,
+				DFB02D801A6A60DA00E7AE1B /* MapViewController.h */,
+				DFB02D811A6A60DA00E7AE1B /* MapViewController.m */,
+				DFB02D831A6A623800E7AE1B /* ProfileViewController.h */,
+				DFB02D841A6A623800E7AE1B /* ProfileViewController.m */,
+				DFB02D861A6A624900E7AE1B /* ShopViewController.h */,
+				DFB02D871A6A624900E7AE1B /* ShopViewController.m */,
+				DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */,
+				DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */,
 				DF1B09331A6A1A740037DA95 /* Main.storyboard */,
 				DF1B09361A6A1A740037DA95 /* Images.xcassets */,
 				DF1B09381A6A1A740037DA95 /* LaunchScreen.xib */,
@@ -300,7 +328,11 @@
 			files = (
 				DF1B092F1A6A1A740037DA95 /* AppDelegate.m in Sources */,
 				DFB02D4E1A6A403D00E7AE1B /* README.md in Sources */,
+				DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */,
 				DF1B092C1A6A1A740037DA95 /* main.m in Sources */,
+				DFB02D821A6A60DA00E7AE1B /* MapViewController.m in Sources */,
+				DFB02D881A6A624900E7AE1B /* ShopViewController.m in Sources */,
+				DFB02D851A6A623800E7AE1B /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +411,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,7 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
