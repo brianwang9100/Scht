@@ -45,6 +45,10 @@
 		DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */; };
 		DFBA8F771A6B4E4800AB3B25 /* ShitBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */; };
 		DFBA8F791A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */; };
+		DFBA8F7B1A6B503300AB3B25 /* SchtButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F7A1A6B503300AB3B25 /* SchtButton.png */; };
+		DFBA8F7D1A6B521D00AB3B25 /* FacebookButtonpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */; };
+		DFBA8F7F1A6B535A00AB3B25 /* Reset Buttonpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */; };
+		DFBA8F831A6B543800AB3B25 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F821A6B543800AB3B25 /* arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,10 @@
 		DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 		DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShitBarIcon.png; sourceTree = "<group>"; };
 		DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShitBarIcon 72ppi.png"; sourceTree = "<group>"; };
+		DFBA8F7A1A6B503300AB3B25 /* SchtButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SchtButton.png; sourceTree = "<group>"; };
+		DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookButtonpng.png; sourceTree = "<group>"; };
+		DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reset Buttonpng.png"; sourceTree = "<group>"; };
+		DFBA8F821A6B543800AB3B25 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +238,11 @@
 				DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */,
 				DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */,
 				DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */,
+				DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */,
+				DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */,
+				DFBA8F7A1A6B503300AB3B25 /* SchtButton.png */,
 				DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */,
+				DFBA8F821A6B543800AB3B25 /* arrow.png */,
 				DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */,
 				DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */,
 				DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */,
@@ -323,7 +335,9 @@
 			files = (
 				DFBA8F791A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png in Resources */,
 				DFB02D5F1A6A5A4B00E7AE1B /* dollar103 (1).png in Resources */,
+				DFBA8F7F1A6B535A00AB3B25 /* Reset Buttonpng.png in Resources */,
 				DFB02D5E1A6A5A4B00E7AE1B /* calendar169.png in Resources */,
+				DFBA8F7D1A6B521D00AB3B25 /* FacebookButtonpng.png in Resources */,
 				DFB02D611A6A5A4B00E7AE1B /* user60.png in Resources */,
 				DFBA8F681A6B0EE100AB3B25 /* DarkTurdIcon.png in Resources */,
 				DFBA8F771A6B4E4800AB3B25 /* ShitBarIcon.png in Resources */,
@@ -332,9 +346,11 @@
 				DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */,
 				DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */,
 				DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */,
+				DFBA8F831A6B543800AB3B25 /* arrow.png in Resources */,
 				DFB02D601A6A5A4B00E7AE1B /* poo2.png in Resources */,
 				DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */,
 				DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */,
+				DFBA8F7B1A6B503300AB3B25 /* SchtButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
