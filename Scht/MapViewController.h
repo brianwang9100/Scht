@@ -12,15 +12,20 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <Firebase/Firebase.h>
 
-@interface MapViewController : UIViewController<CLLocationManagerDelegate,GMSMapViewDelegate>
+@interface MapViewController : UIViewController<CLLocationManagerDelegate,GMSMapViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic,retain) CLLocationManager *locationManager;
 @property (nonatomic, strong) IBOutlet UIButton *placeShitButton;
 
 @property (nonatomic, strong) IBOutlet UIButton *shareButton;
 @property (nonatomic, strong) IBOutlet UIButton *resetButton;
+@property (nonatomic, strong) IBOutlet UIButton *cameraButton;
 
 @property (nonatomic, strong) IBOutlet UITextField *nameField;
 @property (nonatomic, strong) IBOutlet UITextField *descriptionField;
-//@property (nonatomic, strong) IBOutlet UIView *viewForMap;
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+
+@property (nonatomic, strong) UIImage *pictureForShit;
+
 
 @end

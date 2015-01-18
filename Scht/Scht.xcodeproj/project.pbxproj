@@ -49,6 +49,19 @@
 		DFBA8F7D1A6B521D00AB3B25 /* FacebookButtonpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */; };
 		DFBA8F7F1A6B535A00AB3B25 /* Reset Buttonpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */; };
 		DFBA8F831A6B543800AB3B25 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F821A6B543800AB3B25 /* arrow.png */; };
+		DFBA8F8F1A6B686A00AB3B25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F8E1A6B686A00AB3B25 /* AudioToolbox.framework */; };
+		DFBA8F911A6B687800AB3B25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F901A6B687800AB3B25 /* CoreGraphics.framework */; };
+		DFBA8F931A6B688800AB3B25 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F921A6B688800AB3B25 /* MobileCoreServices.framework */; };
+		DFBA8F951A6B689C00AB3B25 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F941A6B689C00AB3B25 /* StoreKit.framework */; };
+		DFBA8F971A6B68AD00AB3B25 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F961A6B68AD00AB3B25 /* libsqlite3.dylib */; };
+		DFBA8F9B1A6B6FB800AB3B25 /* CameraIconpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F9A1A6B6FB800AB3B25 /* CameraIconpng.png */; };
+		DFBA8FA51A6B721300AB3B25 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8FA41A6B721300AB3B25 /* Parse.framework */; };
+		DFBA8FA91A6B726600AB3B25 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8FA81A6B726600AB3B25 /* Social.framework */; };
+		DFBA8FAB1A6B727A00AB3B25 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8FAA1A6B727A00AB3B25 /* Accounts.framework */; };
+		DFBA8FAD1A6B730600AB3B25 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8FAC1A6B730600AB3B25 /* ParseFacebookUtils.framework */; };
+		DFBA8FB31A6BA89500AB3B25 /* ShitInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */; };
+		DFBA8FB51A6BAFFB00AB3B25 /* InfoWindowPng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8FB41A6BAFFB00AB3B25 /* InfoWindowPng.png */; };
+		DFBA8FB71A6BB03800AB3B25 /* ShitInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8FB61A6BB03700AB3B25 /* ShitInfoWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +124,20 @@
 		DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookButtonpng.png; sourceTree = "<group>"; };
 		DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reset Buttonpng.png"; sourceTree = "<group>"; };
 		DFBA8F821A6B543800AB3B25 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		DFBA8F8E1A6B686A00AB3B25 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DFBA8F901A6B687800AB3B25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFBA8F921A6B688800AB3B25 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DFBA8F941A6B689C00AB3B25 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DFBA8F961A6B68AD00AB3B25 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DFBA8F9A1A6B6FB800AB3B25 /* CameraIconpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraIconpng.png; sourceTree = "<group>"; };
+		DFBA8FA41A6B721300AB3B25 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DFBA8FA81A6B726600AB3B25 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DFBA8FAA1A6B727A00AB3B25 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		DFBA8FAC1A6B730600AB3B25 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		DFBA8FB11A6BA89400AB3B25 /* ShitInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShitInfoWindow.h; sourceTree = "<group>"; };
+		DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShitInfoWindow.m; sourceTree = "<group>"; };
+		DFBA8FB41A6BAFFB00AB3B25 /* InfoWindowPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoWindowPng.png; sourceTree = "<group>"; };
+		DFBA8FB61A6BB03700AB3B25 /* ShitInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShitInfoWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,23 +145,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBA8FAB1A6B727A00AB3B25 /* Accounts.framework in Frameworks */,
+				DFBA8FA91A6B726600AB3B25 /* Social.framework in Frameworks */,
+				DFBA8F971A6B68AD00AB3B25 /* libsqlite3.dylib in Frameworks */,
+				DFB02D751A6A5C9700E7AE1B /* libz.dylib in Frameworks */,
 				DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */,
+				DFBA8F951A6B689C00AB3B25 /* StoreKit.framework in Frameworks */,
 				DFBA8F5C1A6AD83700AB3B25 /* Security.framework in Frameworks */,
-				DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */,
-				DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */,
 				DFB02D791A6A5CA000E7AE1B /* QuartzCore.framework in Frameworks */,
+				DFBA8F931A6B688800AB3B25 /* MobileCoreServices.framework in Frameworks */,
+				DFB02D691A6A5C6E00E7AE1B /* CoreLocation.framework in Frameworks */,
+				DFBA8F911A6B687800AB3B25 /* CoreGraphics.framework in Frameworks */,
+				DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */,
+				DFBA8F8F1A6B686A00AB3B25 /* AudioToolbox.framework in Frameworks */,
+				DFBA8FAD1A6B730600AB3B25 /* ParseFacebookUtils.framework in Frameworks */,
+				DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */,
 				DFBA8F6D1A6B2C1900AB3B25 /* FacebookSDK.framework in Frameworks */,
 				DFB02D771A6A5C9C00E7AE1B /* OpenGLES.framework in Frameworks */,
-				DFB02D751A6A5C9700E7AE1B /* libz.dylib in Frameworks */,
 				DFB02D731A6A5C8F00E7AE1B /* libicucore.dylib in Frameworks */,
 				DFB02D711A6A5C8700E7AE1B /* libc++.dylib in Frameworks */,
 				DFB02D6F1A6A5C7F00E7AE1B /* ImageIO.framework in Frameworks */,
 				DFB02D6D1A6A5C7900E7AE1B /* GLKit.framework in Frameworks */,
 				DFB02D6B1A6A5C7300E7AE1B /* CoreText.framework in Frameworks */,
-				DFB02D691A6A5C6E00E7AE1B /* CoreLocation.framework in Frameworks */,
 				DFBA8F5E1A6AD87100AB3B25 /* Firebase.framework in Frameworks */,
 				DFB02D671A6A5C6800E7AE1B /* CoreData.framework in Frameworks */,
 				DFB02D651A6A5C5E00E7AE1B /* AVFoundation.framework in Frameworks */,
+				DFBA8FA51A6B721300AB3B25 /* Parse.framework in Frameworks */,
 				DFB02D631A6A5C2B00E7AE1B /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +188,15 @@
 		DF1B091D1A6A1A740037DA95 = {
 			isa = PBXGroup;
 			children = (
+				DFBA8FAC1A6B730600AB3B25 /* ParseFacebookUtils.framework */,
+				DFBA8FAA1A6B727A00AB3B25 /* Accounts.framework */,
+				DFBA8FA81A6B726600AB3B25 /* Social.framework */,
+				DFBA8F961A6B68AD00AB3B25 /* libsqlite3.dylib */,
+				DFBA8FA41A6B721300AB3B25 /* Parse.framework */,
+				DFBA8F941A6B689C00AB3B25 /* StoreKit.framework */,
+				DFBA8F921A6B688800AB3B25 /* MobileCoreServices.framework */,
+				DFBA8F901A6B687800AB3B25 /* CoreGraphics.framework */,
+				DFBA8F8E1A6B686A00AB3B25 /* AudioToolbox.framework */,
 				DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */,
 				DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */,
 				DFBA8F5D1A6AD87100AB3B25 /* Firebase.framework */,
@@ -195,10 +240,13 @@
 				DF1B092E1A6A1A740037DA95 /* AppDelegate.m */,
 				DFB02D801A6A60DA00E7AE1B /* MapViewController.h */,
 				DFB02D811A6A60DA00E7AE1B /* MapViewController.m */,
+				DFBA8FB11A6BA89400AB3B25 /* ShitInfoWindow.h */,
+				DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */,
 				DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */,
 				DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */,
 				DF1B09331A6A1A740037DA95 /* Main.storyboard */,
 				DF1B09361A6A1A740037DA95 /* Images.xcassets */,
+				DFBA8FB61A6BB03700AB3B25 /* ShitInfoWindow.xib */,
 				DF1B09381A6A1A740037DA95 /* LaunchScreen.xib */,
 				DFB02D591A6A517E00E7AE1B /* Icons */,
 				DF1B09291A6A1A740037DA95 /* Supporting Files */,
@@ -237,6 +285,8 @@
 			children = (
 				DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */,
 				DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */,
+				DFBA8FB41A6BAFFB00AB3B25 /* InfoWindowPng.png */,
+				DFBA8F9A1A6B6FB800AB3B25 /* CameraIconpng.png */,
 				DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */,
 				DFBA8F7C1A6B521D00AB3B25 /* FacebookButtonpng.png */,
 				DFBA8F7E1A6B535A00AB3B25 /* Reset Buttonpng.png */,
@@ -345,10 +395,13 @@
 				DF1B093A1A6A1A740037DA95 /* LaunchScreen.xib in Resources */,
 				DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */,
 				DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */,
+				DFBA8F9B1A6B6FB800AB3B25 /* CameraIconpng.png in Resources */,
 				DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */,
+				DFBA8FB71A6BB03800AB3B25 /* ShitInfoWindow.xib in Resources */,
 				DFBA8F831A6B543800AB3B25 /* arrow.png in Resources */,
 				DFB02D601A6A5A4B00E7AE1B /* poo2.png in Resources */,
 				DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */,
+				DFBA8FB51A6BAFFB00AB3B25 /* InfoWindowPng.png in Resources */,
 				DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */,
 				DFBA8F7B1A6B503300AB3B25 /* SchtButton.png in Resources */,
 			);
@@ -369,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1B092F1A6A1A740037DA95 /* AppDelegate.m in Sources */,
+				DFBA8FB31A6BA89500AB3B25 /* ShitInfoWindow.m in Sources */,
 				DFB02D4E1A6A403D00E7AE1B /* README.md in Sources */,
 				DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */,
 				DF1B092C1A6A1A740037DA95 /* main.m in Sources */,

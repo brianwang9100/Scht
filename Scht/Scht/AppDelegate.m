@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -21,6 +22,12 @@
     [GMSServices provideAPIKey:@"AIzaSyDU69Tl_xxOk6MRpvjlMUFei0ludixJfmM"];
     [FBAppEvents activateApp];
     // Override point for customization after application launch.
+
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"CtTsEZrVnSe10egnSA03U9unsiYGYFkdck2rX3Ud"
+                  clientKey:@"gzhjCSyUpao9UbYwXKcHP2eQrwXH7s0pcB4jg2Ph"];
+    
     
     return YES;
 }

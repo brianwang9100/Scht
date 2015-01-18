@@ -1,4 +1,6 @@
 Sscht: The app that tracks your shit!
 -Brian Wang
 ==========================================
-Shit
+-add notification for text fields
+-spice up the marker bubbles
+
