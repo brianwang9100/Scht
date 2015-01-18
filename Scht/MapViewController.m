@@ -184,35 +184,35 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
 }
 
 -(void)facebookShare {
-    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-    params.link = [NSURL URLWithString:@"https://developers.facebook.com/docs/ios/share/"];
-    
-    // If the Facebook app is installed and we can present the share dialog
-    
-    if ([FBDialogs canPresentShareDialogWithParams:params]) {
-        [FBDialogs presentShareDialogWithLink:params.link
-                                      handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-                                          if(error) {
-                                              // An error occurred, we need to handle the error
-                                              // See: https://developers.facebook.com/docs/ios/errors
-                                              NSLog(@"Error publishing story: %@", error.description);
-                                          } else {
-                                              // Success
-                                              NSLog(@"result %@", results);
-                                          }
-                                      }];
-    } else {
-        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       @"Sharing Tutorial", @"name",
-                                       @"Build great social apps and get more installs.", @"caption",
-                                       @"Allow your users to share stories on Facebook from your app using the iOS SDK.", @"description",
-                                       @"https://developers.facebook.com/docs/ios/share/", @"link",
-                                       @"http://i.imgur.com/g3Qc1HN.png", @"picture",
+//    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+//    params.link = [NSURL URLWithString:@"http://i.imgur.com/Ks8wWvT.jpg"];
+//    
+//    // If the Facebook app is installed and we can present the share dialog
+//    
+//    if ([FBDialogs canPresentShareDialogWithParams:params]) {
+//        [FBDialogs presentShareDialogWithLink:params.link
+//                                      handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+//                                          if(error) {
+//                                              // An error occurred, we need to handle the error
+//                                              // See: https://developers.facebook.com/docs/ios/errors
+//                                              NSLog(@"Error publishing story: %@", error.description);
+//                                          } else {
+//                                              // Success
+//                                              NSLog(@"result %@", results);
+//                                          }
+//                                      }];
+//    } else {
+        NSMutableDictionary *otherParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                       @"Wanna hear about my Scht?", @"name",
+                                       @"I just had to share about my Scht!", @"caption",
+                                       @"Scht is the app that allows you to document and log your shits while being able to see the shits of others!", @"description",
+                                       @"Scht.io", @"link",
+                                       @"http://i.imgur.com/Ks8wWvT.jpg", @"picture",
                                        nil];
         
         // Show the feed dialog
         [FBWebDialogs presentFeedDialogModallyWithSession:nil
-                                               parameters:params
+                                               parameters:otherParams
                                                   handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
                                                       if (error) {
                                                           // An error occurred, we need to handle the error
@@ -238,7 +238,7 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
                                                           }
                                                       }
                                                   }];
-    }
+//    }
 }
 
 - (NSDictionary*)parseURLParams:(NSString *)query {
@@ -252,6 +252,7 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     }
     return params;
 }
+
 /*
 #pragma mark - Navigation
 
