@@ -47,7 +47,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="poo2.png" id="wMd-mx-H4V" userLabel="Map"/>
+                    <tabBarItem key="tabBarItem" title="Scht" image="ShitBarIcon 72ppi.png" id="wMd-mx-H4V" userLabel="Map"/>
                     <connections>
                         <outlet property="nameField" destination="Mnt-Iw-hY4" id="xkz-j6-sIz"/>
                         <outlet property="placeShitButton" destination="G2d-fu-CSl" id="LRV-zX-I5Y"/>
@@ -59,25 +59,10 @@
             </objects>
             <point key="canvasLocation" x="505" y="414"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="e3B-hc-shE">
-            <objects>
-                <viewController id="VnV-bD-aLe" userLabel="Profile" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IHB-B0-VV9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="user60.png" id="veL-tG-GVY" userLabel="Profile"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K1y-uH-1vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="505" y="1146"/>
-        </scene>
         <!--History-->
         <scene sceneID="VLp-Qi-w9D">
             <objects>
-                <tableViewController id="Nn7-PS-pW6" userLabel="History" sceneMemberID="viewController">
+                <tableViewController id="Nn7-PS-pW6" userLabel="History" customClass="HistoryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pxe-NZ-jI9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,26 +80,11 @@
                             <outlet property="delegate" destination="Nn7-PS-pW6" id="OsA-dn-buq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" image="calendar169.png" id="tmi-qe-tlG" userLabel="History"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="tmi-qe-tlG" userLabel="History"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCy-Ki-DFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="505" y="-966"/>
-        </scene>
-        <!--Shop-->
-        <scene sceneID="htx-4G-EfR">
-            <objects>
-                <viewController id="67N-MB-hRn" userLabel="Shop" customClass="ShopViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y8n-Y7-tjn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="dollar103 (1).png" id="W9z-0T-nkN" userLabel="Shop"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bbl-po-Pb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="505" y="-268"/>
         </scene>
         <!--MainScene-->
         <scene sceneID="BUd-XJ-lTL">
@@ -130,8 +100,6 @@
                     <connections>
                         <segue destination="zrL-04-0OR" kind="relationship" relationship="viewControllers" id="CUf-s3-LOM"/>
                         <segue destination="Nn7-PS-pW6" kind="relationship" relationship="viewControllers" id="0Tc-Cz-9L1"/>
-                        <segue destination="VnV-bD-aLe" kind="relationship" relationship="viewControllers" id="p54-IX-jJ8"/>
-                        <segue destination="67N-MB-hRn" kind="relationship" relationship="viewControllers" id="i0y-eH-4Y6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWo-g8-1U8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,10 +108,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar169.png" width="32" height="32"/>
-        <image name="dollar103 (1).png" width="32" height="32"/>
-        <image name="poo2.png" width="32" height="32"/>
-        <image name="user60.png" width="32" height="32"/>
+        <image name="ShitBarIcon 72ppi.png" width="45" height="45"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

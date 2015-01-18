@@ -33,8 +33,6 @@
 		DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D7A1A6A5CA600E7AE1B /* SystemConfiguration.framework */; };
 		DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */; };
 		DFB02D821A6A60DA00E7AE1B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D811A6A60DA00E7AE1B /* MapViewController.m */; };
-		DFB02D851A6A623800E7AE1B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D841A6A623800E7AE1B /* ProfileViewController.m */; };
-		DFB02D881A6A624900E7AE1B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D871A6A624900E7AE1B /* ShopViewController.m */; };
 		DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */; };
 		DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */; };
 		DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */; };
@@ -45,6 +43,8 @@
 		DFBA8F6D1A6B2C1900AB3B25 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */; };
 		DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */; };
 		DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */; };
+		DFBA8F771A6B4E4800AB3B25 /* ShitBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */; };
+		DFBA8F791A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,10 +90,6 @@
 		DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		DFB02D801A6A60DA00E7AE1B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
 		DFB02D811A6A60DA00E7AE1B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
-		DFB02D831A6A623800E7AE1B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ../ProfileViewController.h; sourceTree = "<group>"; };
-		DFB02D841A6A623800E7AE1B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ../ProfileViewController.m; sourceTree = "<group>"; };
-		DFB02D861A6A624900E7AE1B /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopViewController.h; path = ../ShopViewController.h; sourceTree = "<group>"; };
-		DFB02D871A6A624900E7AE1B /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopViewController.m; path = ../ShopViewController.m; sourceTree = "<group>"; };
 		DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTableViewController.h; path = ../HistoryTableViewController.h; sourceTree = "<group>"; };
 		DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewController.m; path = ../HistoryTableViewController.m; sourceTree = "<group>"; };
 		DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -105,6 +101,8 @@
 		DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
+		DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShitBarIcon.png; sourceTree = "<group>"; };
+		DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShitBarIcon 72ppi.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +187,6 @@
 				DF1B092E1A6A1A740037DA95 /* AppDelegate.m */,
 				DFB02D801A6A60DA00E7AE1B /* MapViewController.h */,
 				DFB02D811A6A60DA00E7AE1B /* MapViewController.m */,
-				DFB02D831A6A623800E7AE1B /* ProfileViewController.h */,
-				DFB02D841A6A623800E7AE1B /* ProfileViewController.m */,
-				DFB02D861A6A624900E7AE1B /* ShopViewController.h */,
-				DFB02D871A6A624900E7AE1B /* ShopViewController.m */,
 				DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */,
 				DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */,
 				DF1B09331A6A1A740037DA95 /* Main.storyboard */,
@@ -236,6 +230,8 @@
 				DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */,
 				DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */,
 				DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */,
+				DFBA8F781A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png */,
+				DFBA8F761A6B4E4800AB3B25 /* ShitBarIcon.png */,
 				DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */,
 				DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */,
 				DFB02D5C1A6A5A4B00E7AE1B /* poo2.png */,
@@ -325,10 +321,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBA8F791A6B4E7E00AB3B25 /* ShitBarIcon 72ppi.png in Resources */,
 				DFB02D5F1A6A5A4B00E7AE1B /* dollar103 (1).png in Resources */,
 				DFB02D5E1A6A5A4B00E7AE1B /* calendar169.png in Resources */,
 				DFB02D611A6A5A4B00E7AE1B /* user60.png in Resources */,
 				DFBA8F681A6B0EE100AB3B25 /* DarkTurdIcon.png in Resources */,
+				DFBA8F771A6B4E4800AB3B25 /* ShitBarIcon.png in Resources */,
 				DF1B09351A6A1A740037DA95 /* Main.storyboard in Resources */,
 				DF1B093A1A6A1A740037DA95 /* LaunchScreen.xib in Resources */,
 				DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */,
@@ -359,8 +357,6 @@
 				DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */,
 				DF1B092C1A6A1A740037DA95 /* main.m in Sources */,
 				DFB02D821A6A60DA00E7AE1B /* MapViewController.m in Sources */,
-				DFB02D881A6A624900E7AE1B /* ShopViewController.m in Sources */,
-				DFB02D851A6A623800E7AE1B /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
