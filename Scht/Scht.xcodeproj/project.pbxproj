@@ -38,6 +38,12 @@
 		DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */; };
 		DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */; };
 		DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */; };
+		DFBA8F5C1A6AD83700AB3B25 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F5B1A6AD83700AB3B25 /* Security.framework */; };
+		DFBA8F5E1A6AD87100AB3B25 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F5D1A6AD87100AB3B25 /* Firebase.framework */; };
+		DFBA8F681A6B0EE100AB3B25 /* DarkTurdIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */; };
+		DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */; };
+		DFBA8F6D1A6B2C1900AB3B25 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */; };
+		DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +97,12 @@
 		DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewController.m; path = ../HistoryTableViewController.m; sourceTree = "<group>"; };
 		DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DFBA8F5B1A6AD83700AB3B25 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DFBA8F5D1A6AD87100AB3B25 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkTurdIcon.png; sourceTree = "<group>"; };
+		DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTurdIcon.png; sourceTree = "<group>"; };
+		DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +110,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */,
+				DFBA8F5C1A6AD83700AB3B25 /* Security.framework in Frameworks */,
 				DFB02D8F1A6A6A7300E7AE1B /* CFNetwork.framework in Frameworks */,
 				DFB02D8D1A6A6A3800E7AE1B /* MapKit.framework in Frameworks */,
-				DFB02D7B1A6A5CA600E7AE1B /* SystemConfiguration.framework in Frameworks */,
 				DFB02D791A6A5CA000E7AE1B /* QuartzCore.framework in Frameworks */,
+				DFBA8F6D1A6B2C1900AB3B25 /* FacebookSDK.framework in Frameworks */,
 				DFB02D771A6A5C9C00E7AE1B /* OpenGLES.framework in Frameworks */,
 				DFB02D751A6A5C9700E7AE1B /* libz.dylib in Frameworks */,
 				DFB02D731A6A5C8F00E7AE1B /* libicucore.dylib in Frameworks */,
@@ -110,6 +124,7 @@
 				DFB02D6D1A6A5C7900E7AE1B /* GLKit.framework in Frameworks */,
 				DFB02D6B1A6A5C7300E7AE1B /* CoreText.framework in Frameworks */,
 				DFB02D691A6A5C6E00E7AE1B /* CoreLocation.framework in Frameworks */,
+				DFBA8F5E1A6AD87100AB3B25 /* Firebase.framework in Frameworks */,
 				DFB02D671A6A5C6800E7AE1B /* CoreData.framework in Frameworks */,
 				DFB02D651A6A5C5E00E7AE1B /* AVFoundation.framework in Frameworks */,
 				DFB02D631A6A5C2B00E7AE1B /* GoogleMaps.framework in Frameworks */,
@@ -129,6 +144,10 @@
 		DF1B091D1A6A1A740037DA95 = {
 			isa = PBXGroup;
 			children = (
+				DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */,
+				DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */,
+				DFBA8F5D1A6AD87100AB3B25 /* Firebase.framework */,
+				DFBA8F5B1A6AD83700AB3B25 /* Security.framework */,
 				DFB02D8E1A6A6A7300E7AE1B /* CFNetwork.framework */,
 				DFB02D8C1A6A6A3800E7AE1B /* MapKit.framework */,
 				DFB02D7E1A6A5D4100E7AE1B /* GoogleMaps.bundle */,
@@ -213,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */,
+				DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */,
+				DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */,
 				DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */,
 				DFB02D5C1A6A5A4B00E7AE1B /* poo2.png */,
 				DFB02D5D1A6A5A4B00E7AE1B /* user60.png */,
@@ -304,8 +325,11 @@
 				DFB02D5F1A6A5A4B00E7AE1B /* dollar103 (1).png in Resources */,
 				DFB02D5E1A6A5A4B00E7AE1B /* calendar169.png in Resources */,
 				DFB02D611A6A5A4B00E7AE1B /* user60.png in Resources */,
+				DFBA8F681A6B0EE100AB3B25 /* DarkTurdIcon.png in Resources */,
 				DF1B09351A6A1A740037DA95 /* Main.storyboard in Resources */,
 				DF1B093A1A6A1A740037DA95 /* LaunchScreen.xib in Resources */,
+				DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */,
+				DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */,
 				DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */,
 				DFB02D601A6A5A4B00E7AE1B /* poo2.png in Resources */,
 				DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */,
@@ -411,7 +435,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lsqlite3.0",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,7 +474,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lsqlite3.0",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -463,6 +493,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/bigwangsmash/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Scht/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -481,6 +512,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/bigwangsmash/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Scht/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

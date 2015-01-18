@@ -7,6 +7,7 @@
 //
 
 #import "ShopViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface ShopViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    loginView.center = self.view.center;
+    [self.view addSubview:loginView];
+    
     // Do any additional setup after loading the view.
 }
 
