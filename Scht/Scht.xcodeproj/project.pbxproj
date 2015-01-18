@@ -44,6 +44,7 @@
 		DFBA8F691A6B0EE100AB3B25 /* MainTurdIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */; };
 		DFBA8F6D1A6B2C1900AB3B25 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */; };
 		DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */; };
+		DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTurdIcon.png; sourceTree = "<group>"; };
 		DFBA8F6C1A6B2C1900AB3B25 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		DFBA8F6E1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */,
 				DFBA8F661A6B0EE100AB3B25 /* DarkTurdIcon.png */,
 				DFBA8F671A6B0EE100AB3B25 /* MainTurdIcon.png */,
+				DFBA8F731A6B4B2700AB3B25 /* SplashScreen.png */,
 				DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */,
 				DFB02D5C1A6A5A4B00E7AE1B /* poo2.png */,
 				DFB02D5D1A6A5A4B00E7AE1B /* user60.png */,
@@ -332,6 +335,7 @@
 				DFBA8F6F1A6B348C00AB3B25 /* FBUserSettingsViewResources.bundle in Resources */,
 				DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */,
 				DFB02D601A6A5A4B00E7AE1B /* poo2.png in Resources */,
+				DFBA8F741A6B4B2700AB3B25 /* SplashScreen.png in Resources */,
 				DFB02D7F1A6A5D4100E7AE1B /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
