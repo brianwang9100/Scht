@@ -20,6 +20,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *resetButton;
 
 @property (nonatomic, strong) IBOutlet UITextField *nameField;
+@property (nonatomic, strong) IBOutlet UITextField *descriptionField;
 //@property (nonatomic, strong) IBOutlet UIView *viewForMap;
 
 @end

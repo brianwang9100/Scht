@@ -34,19 +34,28 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" backgroundImage="FacebookButtonpng.png"/>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="BwT-cM-Y0y">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="BwT-cM-Y0y">
                                 <rect key="frame" x="16" y="459.00000196695322" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="arrow.png" backgroundImage="Reset Buttonpng.png"/>
+                                <state key="normal" image="arrow.png" backgroundImage="Reset Buttonpng.png">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How was your Scht? (50 words)" minimumFontSize="17" id="YRU-WE-k9M">
+                                <rect key="frame" x="16" y="58" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scht" image="ShitBarIcon 72ppi.png" id="wMd-mx-H4V" userLabel="Map"/>
                     <connections>
+                        <outlet property="descriptionField" destination="YRU-WE-k9M" id="bml-Ba-hNq"/>
                         <outlet property="nameField" destination="Mnt-Iw-hY4" id="xkz-j6-sIz"/>
                         <outlet property="placeShitButton" destination="G2d-fu-CSl" id="LRV-zX-I5Y"/>
                         <outlet property="resetButton" destination="BwT-cM-Y0y" id="lnC-Qq-A6X"/>
@@ -110,7 +119,7 @@
         <image name="Reset Buttonpng.png" width="43" height="43"/>
         <image name="SchtButton.png" width="163" height="43"/>
         <image name="ShitBarIcon 72ppi.png" width="45" height="45"/>
-        <image name="arrow.png" width="40" height="40"/>
+        <image name="arrow.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -16,6 +16,7 @@
 @implementation MapViewController {
     GMSMapView *_mapView;
     NSUserDefaults *_defaults;
+    NSString *_lockedDescription;
 }
 
 - (void)viewDidLoad {
@@ -34,6 +35,8 @@
     _nameField.delegate = self;
     _defaults = [NSUserDefaults standardUserDefaults];
     _nameField.text = [_defaults objectForKey:@"name"];
+    
+    _descriptionField.delegate = self;
 }
 -(void)startMap {
     //---- For getting current gps location
@@ -85,18 +88,21 @@
             }
             marker.position = CLLocationCoordinate2DMake(point.x, point.y);
             marker.title = [NSString stringWithFormat:@"%@, %@", name, date ];
-            
+            marker.snippet = locationEvent.value[@"description"];
             marker.appearAnimation = kGMSMarkerAnimationPop;
             marker.map = _mapView;
         }
     }];
 }
 -(void)placeShit {
-    if (_nameField.text.length == 0) {
-        _nameField.backgroundColor = [UIColor redColor];
-        _nameField.textColor = [UIColor whiteColor];
+    if (_nameField.text.length == 0||_descriptionField.text.length >= 50) {
+//        _nameField.backgroundColor = [UIColor redColor];
+//        _nameField.textColor = [UIColor whiteColor];
         return;
     }
+    
+    _lockedDescription = _descriptionField.text;
+
     [_defaults setObject:_nameField.text forKey:@"name"];
     [_defaults synchronize];
     
@@ -118,6 +124,7 @@
                             @"latitude": [NSString stringWithFormat: @"%f", _locationManager.location.coordinate.latitude],
                             @"longitude": [NSString stringWithFormat:@"%f", _locationManager.location.coordinate.longitude],
                             @"date": date_String,
+                            @"description": _descriptionField.text,
                             };
                               
     [[newPersonRef childByAutoId] setValue: person];
@@ -127,7 +134,7 @@
     marker.icon = [self resizeImage:[UIImage imageNamed:@"MainTurdIcon"]];
     marker.title = [NSString stringWithFormat:@"%@, %@", _nameField.text, date_String];
     marker.appearAnimation = kGMSMarkerAnimationPop;
-    //                marker.snippet = [NSString stringWithFormat:@"%d sellers", [snapshot.value[@"sellers"] count]];
+    marker.snippet = _lockedDescription;
     marker.map = _mapView;
     
     _resetButton.enabled = TRUE;
@@ -154,6 +161,7 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [_nameField resignFirstResponder];
+    [_descriptionField resignFirstResponder];
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
@@ -163,6 +171,7 @@
 - (void)mapView:(GMSMapView *)mapView
 didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     [_nameField resignFirstResponder];
+    [_descriptionField resignFirstResponder];
     NSLog([NSString stringWithFormat: @"%f,%f", coordinate.latitude, coordinate.longitude ]);
 }
 
@@ -203,9 +212,9 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
 //                                      }];
 //    } else {
         NSMutableDictionary *otherParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       @"Wanna hear about my Scht?", @"name",
+                                            [NSString stringWithFormat:@"\"%@\"", _lockedDescription], @"name",
                                        @"I just had to share about my Scht!", @"caption",
-                                       @"Scht is the app that allows you to document and log your shits while being able to see the shits of others!", @"description",
+                                       @"Scht is the app that allows you to document and log your shits! Scht and share your most intimate moments!", @"description",
                                        @"Scht.io", @"link",
                                        @"http://i.imgur.com/Ks8wWvT.jpg", @"picture",
                                        nil];
