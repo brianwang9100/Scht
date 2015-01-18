@@ -28,7 +28,6 @@
     [Parse setApplicationId:@"CtTsEZrVnSe10egnSA03U9unsiYGYFkdck2rX3Ud"
                   clientKey:@"gzhjCSyUpao9UbYwXKcHP2eQrwXH7s0pcB4jg2Ph"];
     
-    
     return YES;
 }
 

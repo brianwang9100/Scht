@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <GoogleMaps/GoogleMaps.h>
+#import <Parse/Parse.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <Firebase/Firebase.h>
+#include <stdlib.h>
 
-@interface MapViewController : UIViewController<CLLocationManagerDelegate,GMSMapViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MapViewController : UIViewController<CLLocationManagerDelegate,GMSMapViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+}
 @property (nonatomic,retain) CLLocationManager *locationManager;
 @property (nonatomic, strong) IBOutlet UIButton *placeShitButton;
 

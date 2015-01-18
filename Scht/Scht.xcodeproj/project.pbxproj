@@ -62,6 +62,7 @@
 		DFBA8FB31A6BA89500AB3B25 /* ShitInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */; };
 		DFBA8FB51A6BAFFB00AB3B25 /* InfoWindowPng.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8FB41A6BAFFB00AB3B25 /* InfoWindowPng.png */; };
 		DFBA8FB71A6BB03800AB3B25 /* ShitInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBA8FB61A6BB03700AB3B25 /* ShitInfoWindow.xib */; };
+		DFBA8FBA1A6BB55800AB3B25 /* ShitMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBA8FB91A6BB55800AB3B25 /* ShitMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,8 @@
 		DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShitInfoWindow.m; sourceTree = "<group>"; };
 		DFBA8FB41A6BAFFB00AB3B25 /* InfoWindowPng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoWindowPng.png; sourceTree = "<group>"; };
 		DFBA8FB61A6BB03700AB3B25 /* ShitInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShitInfoWindow.xib; sourceTree = "<group>"; };
+		DFBA8FB81A6BB55800AB3B25 /* ShitMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShitMarker.h; sourceTree = "<group>"; };
+		DFBA8FB91A6BB55800AB3B25 /* ShitMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShitMarker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +245,8 @@
 				DFB02D811A6A60DA00E7AE1B /* MapViewController.m */,
 				DFBA8FB11A6BA89400AB3B25 /* ShitInfoWindow.h */,
 				DFBA8FB21A6BA89400AB3B25 /* ShitInfoWindow.m */,
+				DFBA8FB81A6BB55800AB3B25 /* ShitMarker.h */,
+				DFBA8FB91A6BB55800AB3B25 /* ShitMarker.m */,
 				DFB02D891A6A626A00E7AE1B /* HistoryTableViewController.h */,
 				DFB02D8A1A6A626A00E7AE1B /* HistoryTableViewController.m */,
 				DF1B09331A6A1A740037DA95 /* Main.storyboard */,
@@ -426,6 +431,7 @@
 				DFB02D4E1A6A403D00E7AE1B /* README.md in Sources */,
 				DFB02D8B1A6A626A00E7AE1B /* HistoryTableViewController.m in Sources */,
 				DF1B092C1A6A1A740037DA95 /* main.m in Sources */,
+				DFBA8FBA1A6BB55800AB3B25 /* ShitMarker.m in Sources */,
 				DFB02D821A6A60DA00E7AE1B /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,9 @@
 #import "MapViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "ShitInfoWindow.h"
+#import <Parse/Parse.h>
+#import "ShitMarker.h"
 
 @interface MapViewController ()
 
@@ -19,6 +22,7 @@
     NSUserDefaults *_defaults;
     NSString *_lockedDescription;
     BOOL *_pictureTaken;
+    UIImage *_tempHolder;
 
 }
 
@@ -65,7 +69,6 @@
         }
         [_locationManager startUpdatingLocation];
     }
-    NSLog([NSString stringWithFormat:@"%f, %f", _locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude]);
     //------
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: _locationManager.location.coordinate.latitude
                                                             longitude: _locationManager.location.coordinate.longitude
@@ -87,10 +90,8 @@
         for (FDataSnapshot *locationEvent in snapshot.children) {
         
             CGPoint point = [self convertToLocation: locationEvent];
-            NSLog([NSString stringWithFormat:@"%f, %f", point.x, point.y]);
-            
             NSString *date = locationEvent.value[@"date"];
-            GMSMarker *marker = [[GMSMarker alloc] init];
+            ShitMarker *marker = [[ShitMarker alloc] init];
             if ([name isEqualToString: _nameField.text]) {
                 marker.icon = [self resizeImage:[UIImage imageNamed:@"MainTurdIcon"] newSize:CGSizeMake(30, 33)];
             } else {
@@ -98,8 +99,17 @@
 
             }
             marker.position = CLLocationCoordinate2DMake(point.x, point.y);
-            marker.title = [NSString stringWithFormat:@"%@, %@", name, date ];
-            marker.snippet = locationEvent.value[@"description"];
+            
+            marker.name = name;
+            marker.date = date;
+            marker.descriptionLabel = locationEvent.value[@"description"];
+            marker.key = locationEvent.key;
+            if (![locationEvent.value[@"image"] boolValue]) {
+                marker.image = false;
+            } else if ([locationEvent.value[@"image"] boolValue]){
+                marker.image = true;
+            }
+
             marker.appearAnimation = kGMSMarkerAnimationPop;
             marker.map = _mapView;
         }
@@ -107,8 +117,6 @@
 }
 -(void)placeShit {
     if (_nameField.text.length == 0||_descriptionField.text.length >= 50) {
-//        _nameField.backgroundColor = [UIColor redColor];
-//        _nameField.textColor = [UIColor whiteColor];
         return;
     }
     
@@ -130,31 +138,69 @@
     NSString *date_String=[dateformate stringFromDate:[NSDate date]];
     
     Firebase *newPersonRef = [shits childByAppendingPath: _nameField.text];
-    NSDictionary *person = @{
-                            @"latitude": [NSString stringWithFormat: @"%f", _locationManager.location.coordinate.latitude],
-                            @"longitude": [NSString stringWithFormat:@"%f", _locationManager.location.coordinate.longitude],
-                            @"date": date_String,
-                            @"description": _descriptionField.text,
-                            };
-    
-    
     Firebase *randRef = [newPersonRef childByAutoId];
     NSString *referenceKey = randRef.key;
+    NSMutableDictionary *person;
     if (!_pictureTaken) {
-        [person setValue:@"false" forKey:@"image"];
+        person = @{
+                   @"latitude": [NSString stringWithFormat: @"%f", _locationManager.location.coordinate.latitude],
+                   @"longitude": [NSString stringWithFormat:@"%f", _locationManager.location.coordinate.longitude],
+                   @"date": date_String,
+                   @"description": _descriptionField.text,
+                   @"image": @"false",
+                   };
     } else {
-        [person setValue:@"true" forKey:@"image"];
+        person = @{
+                   @"latitude": [NSString stringWithFormat: @"%f", _locationManager.location.coordinate.latitude],
+                   @"longitude": [NSString stringWithFormat:@"%f", _locationManager.location.coordinate.longitude],
+                   @"date": date_String,
+                   @"description": _descriptionField.text,
+                   @"image": @"true",
+                   };
         
+        Firebase *FtoP = [rootRef childByAppendingPath:@"FtoP"];
+        
+        NSData *imageData = UIImagePNGRepresentation(_pictureForShit);
+        PFFile *imageFile = [PFFile fileWithName:@"Image.png" data:imageData];
+        [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                // The image has now been uploaded to Parse. Associate it with a new object
+                PFObject* newPhotoObject = [PFObject objectWithClassName:@"PhotoObject"];
+                [newPhotoObject setObject:imageFile forKey:@"image"];
+                [newPhotoObject save];
+                NSDictionary *pair = @{referenceKey: [newPhotoObject objectId]};
+                [FtoP updateChildValues: pair];
+                [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        NSLog(@"Saved");
+                    }
+                    else{
+                        // Error
+                        NSLog(@"Error: %@ %@", error, [error userInfo]);
+                    }
+                }];
+            }
+        }];
+        
+        
+        _pictureForShit = NULL;
+        [_imageView setImage: NULL];
+        _imageView.hidden = TRUE;
+        _pictureTaken = FALSE;
     }
     
     [randRef setValue: person];
     
-    GMSMarker *marker = [[GMSMarker alloc] init];
+    ShitMarker*marker = [[ShitMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(_locationManager.location.coordinate.latitude, _locationManager.location.coordinate.longitude);
     marker.icon = [self resizeImage:[UIImage imageNamed:@"MainTurdIcon"] newSize:CGSizeMake(30, 33)];
-    marker.title = [NSString stringWithFormat:@"%@, %@", _nameField.text, date_String];
     marker.appearAnimation = kGMSMarkerAnimationPop;
-    marker.snippet = _lockedDescription;
+    marker.name = _nameField.text;
+    marker.date = date_String;
+    marker.descriptionLabel = _descriptionField.text;
+    marker.key = referenceKey;
+    marker.image = _pictureTaken;
+    marker.appearAnimation = kGMSMarkerAnimationPop;
     marker.map = _mapView;
 
     
@@ -229,12 +275,6 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     _placeShitButton.enabled = TRUE;
     _resetButton.hidden = TRUE;
     _cameraButton.hidden = FALSE;
-    
-    
-    _pictureForShit = NULL;
-    [_imageView setImage: NULL];
-    _imageView.hidden = TRUE;
-    _pictureTaken = FALSE;
 }
 -(void) takePicture {
     UIImagePickerController *cameraController = [[UIImagePickerController alloc] init];
@@ -312,6 +352,36 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     _imageView.hidden = FALSE;
     [_imageView setImage: _pictureForShit];
     _pictureTaken = TRUE;
+}
+
+
+-(UIView *) mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+    ShitInfoWindow *infoWindow = [[[NSBundle mainBundle]loadNibNamed: @"ShitInfoWindow" owner:self options:nil] objectAtIndex: 0];
+    ShitMarker *temp = (ShitMarker*) marker;
+    [infoWindow.name setText:temp.name];
+    [infoWindow.date setText:temp.date];
+    [infoWindow.descriptionLabel setText:temp.descriptionLabel];
+    NSLog([NSString stringWithFormat: @"%s", temp.image ? "true" : "false"]);
+    if (temp.image) {
+        PFQuery *query = [PFQuery queryWithClassName: @"PhotoObject"];
+        Firebase *rootRef = [[Firebase alloc] initWithUrl:@"https://schtapp.firebaseio.com/"];
+        Firebase *FtoP = [rootRef childByAppendingPath:@"FtoP"];
+        [[FtoP queryOrderedByKey] observeEventType:FEventTypeChildAdded withBlock:^(FDataSnapshot *snapshot) {
+            NSLog(snapshot.value);
+            if ([snapshot.key isEqualToString: temp.key]) {
+                PFObject *image = [PFQuery getObjectOfClass:@"PhotoObject" objectId:snapshot.value ];
+                PFFile *imageFile = [image objectForKey:@"image"];
+                NSData *imageData = [imageFile getData];
+                UIImage *finalImage = [UIImage imageWithData: imageData];
+                _tempHolder = finalImage;
+            }
+        }];
+        infoWindow.imageView.image = _tempHolder;
+    } else {
+        infoWindow.imageView.image = [self resizeImage:[UIImage imageNamed: @"MainTurdIcon"]newSize:CGSizeMake(60, 65)];
+    }
+    
+    return infoWindow;
 }
 
 /*
