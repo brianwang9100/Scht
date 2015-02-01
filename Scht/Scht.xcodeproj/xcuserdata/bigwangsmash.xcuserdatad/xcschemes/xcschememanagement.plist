@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DailySchacts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Scht.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>DF1B093E1A6A1A740037DA95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF6730E31A6C0FEA008D1C2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

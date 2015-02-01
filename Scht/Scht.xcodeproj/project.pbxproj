@@ -13,6 +13,10 @@
 		DF1B09371A6A1A740037DA95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1B09361A6A1A740037DA95 /* Images.xcassets */; };
 		DF1B093A1A6A1A740037DA95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1B09381A6A1A740037DA95 /* LaunchScreen.xib */; };
 		DF1B09461A6A1A740037DA95 /* SchtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1B09451A6A1A740037DA95 /* SchtTests.m */; };
+		DF6730E71A6C0FEA008D1C2C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6730E61A6C0FEA008D1C2C /* NotificationCenter.framework */; };
+		DF6730ED1A6C0FEA008D1C2C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6730EC1A6C0FEA008D1C2C /* TodayViewController.m */; };
+		DF6730EF1A6C0FEA008D1C2C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6730EE1A6C0FEA008D1C2C /* MainInterface.storyboard */; };
+		DF6730F21A6C0FEA008D1C2C /* DailySchacts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF6730E41A6C0FEA008D1C2C /* DailySchacts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DFB02D4E1A6A403D00E7AE1B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DFB02D4D1A6A403D00E7AE1B /* README.md */; };
 		DFB02D5E1A6A5A4B00E7AE1B /* calendar169.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */; };
 		DFB02D5F1A6A5A4B00E7AE1B /* dollar103 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */; };
@@ -73,7 +77,28 @@
 			remoteGlobalIDString = DF1B09251A6A1A740037DA95;
 			remoteInfo = Scht;
 		};
+		DF6730F01A6C0FEA008D1C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1B091E1A6A1A740037DA95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6730E31A6C0FEA008D1C2C;
+			remoteInfo = DailySchacts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF6730F61A6C0FEB008D1C2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DF6730F21A6C0FEA008D1C2C /* DailySchacts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DF1B09261A6A1A740037DA95 /* Scht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scht.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +112,12 @@
 		DF1B093F1A6A1A740037DA95 /* SchtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1B09441A6A1A740037DA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF1B09451A6A1A740037DA95 /* SchtTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchtTests.m; sourceTree = "<group>"; };
+		DF6730E41A6C0FEA008D1C2C /* DailySchacts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailySchacts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6730E61A6C0FEA008D1C2C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DF6730EA1A6C0FEA008D1C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6730EB1A6C0FEA008D1C2C /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		DF6730EC1A6C0FEA008D1C2C /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		DF6730EE1A6C0FEA008D1C2C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		DFB02D4D1A6A403D00E7AE1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DFB02D5A1A6A5A4B00E7AE1B /* calendar169.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar169.png; sourceTree = "<group>"; };
 		DFB02D5B1A6A5A4B00E7AE1B /* dollar103 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollar103 (1).png"; sourceTree = "<group>"; };
@@ -185,6 +216,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF6730E11A6C0FEA008D1C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6730E71A6C0FEA008D1C2C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -223,6 +262,8 @@
 				DFB02D4D1A6A403D00E7AE1B /* README.md */,
 				DF1B09281A6A1A740037DA95 /* Scht */,
 				DF1B09421A6A1A740037DA95 /* SchtTests */,
+				DF6730E81A6C0FEA008D1C2C /* DailySchacts */,
+				DF6730E51A6C0FEA008D1C2C /* Frameworks */,
 				DF1B09271A6A1A740037DA95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,6 +273,7 @@
 			children = (
 				DF1B09261A6A1A740037DA95 /* Scht.app */,
 				DF1B093F1A6A1A740037DA95 /* SchtTests.xctest */,
+				DF6730E41A6C0FEA008D1C2C /* DailySchacts.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +327,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DF6730E51A6C0FEA008D1C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6730E61A6C0FEA008D1C2C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF6730E81A6C0FEA008D1C2C /* DailySchacts */ = {
+			isa = PBXGroup;
+			children = (
+				DF6730EB1A6C0FEA008D1C2C /* TodayViewController.h */,
+				DF6730EC1A6C0FEA008D1C2C /* TodayViewController.m */,
+				DF6730EE1A6C0FEA008D1C2C /* MainInterface.storyboard */,
+				DF6730E91A6C0FEA008D1C2C /* Supporting Files */,
+			);
+			path = DailySchacts;
+			sourceTree = "<group>";
+		};
+		DF6730E91A6C0FEA008D1C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF6730EA1A6C0FEA008D1C2C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DFB02D591A6A517E00E7AE1B /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,10 +386,12 @@
 				DF1B09221A6A1A740037DA95 /* Sources */,
 				DF1B09231A6A1A740037DA95 /* Frameworks */,
 				DF1B09241A6A1A740037DA95 /* Resources */,
+				DF6730F61A6C0FEB008D1C2C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DF6730F11A6C0FEA008D1C2C /* PBXTargetDependency */,
 			);
 			name = Scht;
 			productName = Scht;
@@ -345,6 +416,23 @@
 			productReference = DF1B093F1A6A1A740037DA95 /* SchtTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DF6730E31A6C0FEA008D1C2C /* DailySchacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6730F51A6C0FEB008D1C2C /* Build configuration list for PBXNativeTarget "DailySchacts" */;
+			buildPhases = (
+				DF6730E01A6C0FEA008D1C2C /* Sources */,
+				DF6730E11A6C0FEA008D1C2C /* Frameworks */,
+				DF6730E21A6C0FEA008D1C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailySchacts;
+			productName = DailySchacts;
+			productReference = DF6730E41A6C0FEA008D1C2C /* DailySchacts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -361,6 +449,10 @@
 					DF1B093E1A6A1A740037DA95 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = DF1B09251A6A1A740037DA95;
+					};
+					DF6730E31A6C0FEA008D1C2C = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = ALVVSFF263;
 					};
 				};
 			};
@@ -379,6 +471,7 @@
 			targets = (
 				DF1B09251A6A1A740037DA95 /* Scht */,
 				DF1B093E1A6A1A740037DA95 /* SchtTests */,
+				DF6730E31A6C0FEA008D1C2C /* DailySchacts */,
 			);
 		};
 /* End PBXProject section */
@@ -419,6 +512,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF6730E21A6C0FEA008D1C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6730EF1A6C0FEA008D1C2C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -444,6 +545,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF6730E01A6C0FEA008D1C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6730ED1A6C0FEA008D1C2C /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -451,6 +560,11 @@
 			isa = PBXTargetDependency;
 			target = DF1B09251A6A1A740037DA95 /* Scht */;
 			targetProxy = DF1B09401A6A1A740037DA95 /* PBXContainerItemProxy */;
+		};
+		DF6730F11A6C0FEA008D1C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6730E31A6C0FEA008D1C2C /* DailySchacts */;
+			targetProxy = DF6730F01A6C0FEA008D1C2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -632,6 +746,36 @@
 			};
 			name = Release;
 		};
+		DF6730F31A6C0FEB008D1C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DailySchacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DF6730F41A6C0FEB008D1C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DailySchacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,6 +805,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DF6730F51A6C0FEB008D1C2C /* Build configuration list for PBXNativeTarget "DailySchacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6730F31A6C0FEB008D1C2C /* Debug */,
+				DF6730F41A6C0FEB008D1C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
