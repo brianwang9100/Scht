@@ -813,6 +813,7 @@
 				DF6730F41A6C0FEB008D1C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
